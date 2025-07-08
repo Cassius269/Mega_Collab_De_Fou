@@ -1,8 +1,12 @@
- function inutile(ert=3)
+ const MIN_THRESHOLD = 3;
+ const MAX_THRESHOLD = 12;
+ 
+ function inutile(ert=MIN_THRESHOLD)
  {
- if(ert>3 && ert <12)
+ if(ert > MIN_THRESHOLD && ert < MAX_THRESHOLD)
  {
  window.alert("STOOOOP");
  }
  return ert
  }
+ 
